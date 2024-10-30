@@ -1,0 +1,49 @@
+8.a. EJERCICIOS NIVEL INICIAL
+
+8.a.1. Crea una clase llamada Forma: 
+
+• Con los siguientes atributos y métodos: 
+
+◦ String nombre
+
+◦ double posicionX, double posicionY
+
+◦ String color
+
+ ◦ constructor propio con todos sus atributos
+
+ ◦ método: double calcularArea( ), y getters y setters de los atributos.
+
+• Crea una clase llamada Triangulo que herede de la clase Forma, y con los atributos base y altura. 
+
+Define en ella el método calcularArea().
+
+• Crea una clase llamada Cuadrado que herede de la clase Forma, y con el atributo lado. Define en 
+
+ella el método calcularArea() y calcularPerimetro().
+
+• Crea una clase aparte con el método main para probar los métodos de las subclases Triangulo y 
+
+Cuadrado. 
+
+MEJORA 1: Crea 2 Cuadrados y 2 Rectángulos, mételos todos en un array, y recorriendo luego el 
+
+array, escribe en consola:
+
+• La suma de las areas de todas las formas del array
+
+• La media de las areas de solo los cuadrados que hay en el array
+
+MEJORA 2: Crea una interfaz llamada IFormas que tenga el método abstracto calcularPerimetro(). 
+
+Haz que ambas clases Triangulo y Cuadrado implementen dicha interfaz (el triangulo es Isósceles), y 
+
+prueba los métodos.
+
+MEJORA 3: Si tras hacer las mejoras 1 y 2, se desea consultar la suma de los perímetros de todas las 
+
+formas del array, veremos que no es posible. Investigar el por qué y buscar una solución
+
+MEJORA 4: El método calcularArea() ha de ser abstracto, hacer los cambios necesarios. Comprueba 
+
+que no se puede instanciar la clase abstracta Forma.
