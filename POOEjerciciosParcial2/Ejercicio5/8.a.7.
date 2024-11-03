@@ -1,0 +1,12 @@
+8.a.7. Crear una clase llamada Empleado
+• atributos privados nombre, y teléfono, ambos de tipo String.
+• El constructor necesitará el nombre y el teléfono.
+• Implementar los métodos necesarios para acceder a los atributos (getters y setters).
+• Añadir el atributo estático y privado numeroEmpleados. Este atributo almacenará el número de
+instancias que se han creado de la clase Empleado.
+• Implementar un método público para conocer el valor de numeroEmpleados. Llamarlo
+getNumeroEmpleados().
+Crear una clase aparte con el método main:
+• Crear un array de 4 empleados. Los datos de cada empleado será leidos por consola.
+• Mostrar los datos de cada empleado del array
+• Llamar al método getNumeroEmpleados para mostrar el número de empleados instanciados.
