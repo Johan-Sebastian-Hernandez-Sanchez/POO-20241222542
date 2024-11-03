@@ -1,0 +1,22 @@
+8.a.5. Juan acaba de abrir un desguace, que reacondiciona vehículos para volver a venderlos, y quiere una
+aplicación para controlarlo.
+Necesita controlar tres clases de vehículos: coches, furgonetas y camiones
+Todos los Vehículos necesita saber el precio que pagó por ellos, la marca y el precio que pagarán al
+comprarlos
+De los coches necesita además saber cuantas puertas traen, de las furgonetas necesita saber la
+capacidad de carga, y de los camiones, el tamaño del remolque y el número de ejes
+De todos los vehículos necesitarán tener el método
+double precioVenta()
+que calcule el precio con el que poner a la venta el nuevo vehículo reacondicionado (el método
+devuelve el nuevo precio calculado).
+El precio de venta inicial de todos los vehículos será el precio que pagó por ellos, mas un 60 por ciento.
+El precio de venta de una furgoneta es el precio de venta inicial y además se le sumará un 20 por
+ciento más si la capacidad de carga es mayor de 10 metros cúbico.
+El precio de venta de un camión es el precio de venta inicial, que además se le multiplica por el
+número de ejes que tenga el camión.
+Crear las clases necesarias para gestionar los distintos vehículos
+Crear un array de 3 camiones, rellenarlo con camiones distintos, y mostrar el precio de venta de todos
+ellos. Solo puede usarse una vez el método precioVenta() con este array.
+Crear un array de 2 furgonetas, rellenarlo con furgonetas distintas, y mostrar el precio de venta de
+todos ellos. Solo puede usarse una vez el método precioVenta() con este array.
+MEJORA 1: Usando polimorfismo, unir los dos arrays en un único array.
