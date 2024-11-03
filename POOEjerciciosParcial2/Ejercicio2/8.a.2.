@@ -1,0 +1,30 @@
+8.a.2. Ejercicio Empleado-Programador. La empresa informática “IBEME SW” necesita llevar un registro de
+sus empleados, para eso ha creado una estructura con estas dos clases;
+1) Clase Empleado
+Atributos:
+- nombre: tipo String (Incluye nombre y apellido)
+- dni: tipo String
+- edad : entero (Rango entre 18 y 45 años, se debe validar en el constructor y en el setter)
+- casado: boolean
+- salario: tipo double
+Métodos:
+- Constructor con todos los parámetros y otro sin parámetros
+- Método clasifica(), que permita mostrar la clasificación según la edad de acuerdo al
+siguiente algoritmo:
+• Si edad es menor o igual a 21, Principiante
+• Si edad es >=22 y <=35, Intermedio
+• Si edad es >35, Senior.
+- Método toString(), para imprimir los datos de un empleado por pantalla (utilizar salto de
+línea \n para separar los atributos).
+- Método subirSalario(int x), que permita aumentar el salario en un porcentaje que sería
+pasado como parámetro al método.
+2) Clase Programador . Clase que hereda de Empleado y además tiene:
+Atributos:
+- lineasDeCodigoPorHora : tipo entero
+- lenguajeDominante: tipo cadena
+Metodos:
+- Constructor con y sin parámetros de entrada.
+- Método double calculaSalario(), que calcula y devuelve el salario del programador,
+calculado con la operación 10* lineasDeCodigoPorHora.
+Desarrollar las clases y los métodos indicados, y una clase Prueba con un main() donde crear y probar
+objetos y métodos.
