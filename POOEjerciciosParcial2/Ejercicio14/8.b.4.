@@ -1,0 +1,47 @@
+8.b.4. Cartones de Bingo. Supongamos la siguiente interfaz , encargada de definir el comportamiento de los
+cartones usados en el juego del Bingo:
+public interface ICarton{
+/**
+* Busca el numero en el carton y o tacha si existe
+* @param numero es el numero que hay que comprobar si existe en el cartón y
+* tacharlo si existe
+* @return true si se ha conseguido tachar el numero
+*/
+public boolean tacharNumero(int numero);
+/**
+* Comprueba si hay alguna linea completa en el carton
+* @return true si existe alguna linea completa
+*/
+public boolean hayLinea();
+/**
+* Comprueba si están todas las lineas completa en el carton (ergo hay bingo)
+* @return true si hay bingo
+*/
+public boolean hayBingo();
+}
+Crear un clase JuegoDelBingo que implemente ICarton y que tiene que cumplir estas reglas;
+• El constructor de la clase recibe como único parámetro una matriz de 3 x 9 , rellena con los
+números de un cartón (los espacios sin números se representan con un cero)
+• Se debe crear un método estático
+
+public bolean cartolValido(int [] [] carton)
+que valide un cartón de acuerdo a estas reglas:
+
+- el tamaño es 3x9
+- no se repitan los números
+- hay cinco números en cada fila, y 4 huecos
+- todos los números están en el rango de 1 al 90
+- cada columna y fila tienen los números en orden creciente (NO es necesario que cada
+número ocupe un lugar en su decena, esto es, no hace falta comprobar que del 1 al 9
+estén en la primera columna, del 11 al 20 en la segunda, etc)
+Escribir una clase PruebaBingo que
+• Cree un cartón (no hace falta que sea aleatorio ni por teclado, puede declararse directamente,
+por ejemplo; int[][] c = { {0,12,0,0,43,0,60,73,85} , {5,0,22,34,0,55,0,78,0} , {9,0,0,38,45,0,69,0,90} }
+
+• Pruebe el método que valida el cartón creado
+MEJORA 1
+Proceso que vaya pidiendo números hasta que se cante linea, y luego vaya pidiendo números hasta
+que se cante bingo
+MEJORA 2
+Crear un método que cree un cartón con números aleatorios, cumpliendo todas las reglas antes
+dichas adema de la colocación de cada número en su columna de decenas.
