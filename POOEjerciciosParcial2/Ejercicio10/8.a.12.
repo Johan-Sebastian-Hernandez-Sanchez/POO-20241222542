@@ -1,0 +1,22 @@
+8.a.12. Aviones de Biberia. La empresa aeronáutica Biberia quien una aplicación para gestionar sus 3
+aeropuertos. Diseñe las clases en Java según lo que considere necesario y coherente, dadas estas
+premisas y condiciones :
+• Cada aeropuerto tiene un nombre y una ciudad donde reside
+• De los 3 aeropuertos, uno es militar y los otros dos son comerciales
+• El militar tiene además como información un nombre en clave, y los comerciales guardan
+tambien el número terminales
+• Los aeropuertos almacenan cada uno además un grupo de aviones asignados:
+‣ Hay tres tipos de aviones: pasajeros, carga y avionetas.
+‣ Todos los aviones tienen un nombre, una matricula y la autonomía de vuelo en km (un
+valor numérico entero).
+‣ Los aviones de pasajeros y las avionetas almacenan además el numero de pasajeros, y los
+de carga, la carga máxima admitida (en Kg)
+‣ Los aviones de pasajeros y las avionetas almacenan además la información de todos sus
+pasajeros:
+- Para cada pasajero se almacena el nombre, el dni y la edad.
+
+• Los aeropuertos tienen métodos para consultar la información completa de todos sus aviones
+• Los aviones tienen métodos para consultar toda su información y la de sus pasajeros, en detalle.
+• Biberia quiere en todos momento poder consultar la información de cualquiera de sus
+pasajeros: dado el nombre de un pasajero, debe indicar a qué avión esta asignado, y el
+aeropuerto donde esta asignado dicho avión.
